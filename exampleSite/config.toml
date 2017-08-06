@@ -24,6 +24,12 @@ paginate = 5
 	
 	title = "MY NAME"
 	subtitle = "MY HUGO BLOG"
+	
+    # whether to show share buttons.
+	shareTwitter = true
+    shareFacebook = false
+    shareGooglePlus = true
+    shareLinkedIn = true
 
 	# Social buttons for sidebar
 	# Each of these are optional
