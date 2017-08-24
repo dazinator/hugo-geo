@@ -7,8 +7,8 @@
     <meta name="twitter:card" content="summary"/>
   {{ end }}
   <!-- Twitter Card data -->
-  <!-- <meta name="twitter:title" content="{{ .Title }}"/>
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/> -->
+  <meta name="twitter:title" content="{{ .Title }}"/>
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
   {{ with .Site.Social.twitter }}
     <meta name="twitter:site" content="@{{ . }}"/>
   {{ end }}
@@ -25,8 +25,8 @@
   {{ with .Site.Social.twitter }}
     <meta name="twitter:site" content="@{{ . }}"/>
   {{ end }}
-  <!-- <meta name="twitter:title" content="{{ .Title }}"/>
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/> -->
+  <meta name="twitter:title" content="{{ .Title }}" />
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
   {{ with .Site.Params.images }}
     {{ range first 6 . }}
         <meta name="og:image" content="{{ . | absURL }}" />   
